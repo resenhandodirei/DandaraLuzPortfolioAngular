@@ -1,0 +1,131 @@
+.rich-footer {
+  background-color: #002d1a; 
+  color: #f4f1ea; // Um creme (off-white) para o texto, muito mais elegante que branco puro
+  padding: 100px 8% 40px;
+  position: relative;
+  overflow: hidden;
+
+  // Um detalhe de cor nas extremidades para dar dinamismo
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 69, 0, 0.15) 0%, transparent 70%);
+  }
+
+  .footer-wrap {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 80px;
+    border-bottom: 1px solid rgba(244, 241, 234, 0.1);
+    padding-bottom: 60px;
+  }
+
+  .footer-logo {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 6px;
+    color: #ffd700; // Ouro para o nome
+    margin-bottom: 20px;
+
+    .italic-luz {
+      font-style: italic;
+      font-weight: 200;
+      color: #ff1493; // Rosa choque apenas no "LUZ"
+    }
+  }
+
+  .footer-bio {
+    max-width: 520px;
+    line-height: 1.8;
+    font-style: italic;
+
+    font-size: 14px;
+
+    color: #f4f1ea; // Agora usa o creme elegante
+    //opacity: 0.85; // Leve suavidade para dar hierarquia visual
+
+  }
+
+  .column-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ff4500; // Laranja manga
+    margin-bottom: 30px;
+  }
+
+  .nav-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .f-link {
+      color: #f4f1ea;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: all 0.3s;
+      width: fit-content;
+
+      &:hover {
+        color: #ffd700;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .contact-column {
+    .gradient-box-footer {
+      display: inline-block;
+      padding: 2px;
+      background: linear-gradient(90deg, #ffd700, #ff4500, #ff1493);
+      margin-bottom: 30px;
+
+      .email-btn {
+        display: block;
+        background: #002d1a;
+        color: #f4f1ea;
+        padding: 15px 40px;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        transition: background 0.3s;
+
+        &:hover {
+          background: transparent;
+          color: #002d1a;
+          font-weight: 900;
+        }
+      }
+    }
+
+    .social-row {
+      display: flex;
+      gap: 15px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      a {
+        color: #f4f1ea;
+        text-decoration: none;
+        border-bottom: 1px solid #ff1493;
+        &:hover { color: #ff1493; }
+      }
+    }
+  }
+
+  .footer-credits {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}

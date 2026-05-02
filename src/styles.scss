@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+// Cores que GRITAM Brasil
+$amarelo-canario: #FFD700;   // O corpo do Zé Carioca e o Sol
+$verde-arara: #008000;       // Verde bandeira bem saturado
+$rosa-choque: #FF1493;       // Flor de hibisco e vibração
+$laranja-manga: #FF4500;     // Pôr do sol na Lapa
+$vermelho-arara: #FF0000;    // Penas de Arara-Vermelha
+$azul-beira-mar: #00BFFF;    // O céu do filme Rio
+
+
+body {
+  margin: 0;
+  color: $verde-arara;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 4rem;
+  color: $vermelho-arara;
+  text-shadow: 4px 4px 0px $amarelo-canario; // Sombra de texto para dar volume
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  -webkit-text-stroke: 2px $verde-arara; // Contorno no texto
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $azul-beira-mar;
+  background: $verde-arara;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
