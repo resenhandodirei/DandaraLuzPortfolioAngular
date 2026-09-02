@@ -98,3 +98,30 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .hero-wrap {
+    flex-direction: column;
+    min-height: auto;
+    padding-top: 100px; // espaço pro header fixo + hambúrguer
+
+    .hero-container {
+      padding-left: 6%;
+      padding-right: 6%;
+      text-align: center;
+      order: 1;
+    }
+
+    .image-showcase {
+      order: 2;
+      width: 80%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
