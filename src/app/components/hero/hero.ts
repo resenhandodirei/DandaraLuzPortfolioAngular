@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router'; // Importação necessária
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [], // Tem que avisar o Angular aqui
+  imports: [], 
   templateUrl: './hero.html',
   styleUrl: './hero.scss'
 })
