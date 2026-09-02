@@ -1,13 +1,6 @@
-$amarelo: #FFD700;
-$verde: #008000;
-$rosa: #FF1493;
-$laranja: #FF4500;
-$azul: #00BFFF;
-$roxo: #800080;
-
 .projects-wrapper {
   padding: 90px 8%;
-  background: linear-gradient(360deg, $rosa, $verde, $azul);
+  background: linear-gradient(360deg, var(--color-rosa-choque), var(--color-verde-arara), var(--color-azul-beira-mar));
   color: #fff;
   scroll-margin-top: 90px;
 
@@ -87,10 +80,10 @@ $roxo: #800080;
     grid-column: span 2;
   }
 
-  .accent-green { border-bottom: 4px solid $verde; }
-  .accent-orange { border-bottom: 4px solid $laranja; }
-  .accent-roxo { border-bottom: 4px solid $roxo; }
-  .accent-blue { border-bottom: 4px solid $azul; }
+  .accent-green { border-bottom: 4px solid var(--color-verde-arara); }
+  .accent-orange { border-bottom: 4px solid var(--color-laranja-manga); }
+  .accent-roxo { border-bottom: 4px solid var(--color-roxo); }
+  .accent-blue { border-bottom: 4px solid var(--color-azul-beira-mar); }
 }
 
 @media (max-width: 768px) {

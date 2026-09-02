@@ -1,3 +1,5 @@
+@use '../../../styles' as *;
+
 .hero-wrap {
   display: flex;
   min-height: 90vh;
@@ -88,7 +90,7 @@
       height: 80%;
       object-fit: cover;
       border: 6px solid;
-      border-image-source: linear-gradient(180deg, #FF1493, #FF4500);
+      border-image: linear-gradient(90deg, var(--color-amarelo-canario), var(--color-laranja-manga), var(--color-rosa-choque)) 1;
       border-image-slice: 1;
   
       box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1);

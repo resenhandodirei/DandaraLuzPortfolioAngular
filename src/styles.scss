@@ -1,26 +1,36 @@
-// Cores que GRITAM Brasil
-$amarelo-canario: #FFD700;   // O corpo do Zé Carioca e o Sol
-$verde-arara: #008000;       // Verde bandeira bem saturado
-$rosa-choque: #FF1493;       // Flor de hibisco e vibração
-$laranja-manga: #FF4500;     // Pôr do sol na Lapa
-$vermelho-arara: #FF0000;    // Penas de Arara-Vermelha
-$azul-beira-mar: #00BFFF;    // O céu do filme Rio
+:root {
+  // Cores primárias — identidade "tropical" da marca
+  --color-amarelo-canario: #FFD700;
+  --color-verde-arara: #008000;
+  --color-rosa-choque: #FF1493;
+  --color-laranja-manga: #FF4500;
+  --color-vermelho-arara: #FF0000;
+  --color-azul-beira-mar: #00BFFF;
+  --color-roxo: #800080;
+
+  // Neutros / fundos
+  --color-ink: #001d3d;        // azul-noite quase preto (textos escuros/logo)
+  --color-moss-dark: #002d1a;  // verde musgo profundo (fundos escuros)
+  --color-off-white: #f8f9fa;  // fundo galeria
+  --color-cream: #f4f1ea;      // fundo creme sólido
+  --color-charcoal: #1a1a1a;   // texto neutro escuro
+}
 
 
 body {
   margin: 0;
-  color: $verde-arara;
+  color: --color-verde-arara;
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
 }
 
 h1 {
   font-size: 4rem;
-  color: $vermelho-arara;
-  text-shadow: 4px 4px 0px $amarelo-canario; // Sombra de texto para dar volume
+  color: --color-vermelho-arara;
+  text-shadow: 4px 4px 0px --color-amarelo-canario; // Sombra de texto para dar volume
   text-transform: uppercase;
   margin-bottom: 10px;
-  -webkit-text-stroke: 2px $verde-arara; // Contorno no texto
+  -webkit-text-stroke: 2px --color-verde-arara; // Contorno no texto
 }
 
 html {
@@ -30,8 +40,8 @@ html {
 p {
   font-size: 1.5rem;
   font-weight: bold;
-  color: $azul-beira-mar;
-  background: $verde-arara;
+  color: --color-azul-beira-mar;
+  background: --color-verde-arara;
   display: inline-block;
   padding: 5px 15px;
   border-radius: 5px;
