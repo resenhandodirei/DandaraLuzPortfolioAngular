@@ -69,11 +69,13 @@
   }
 
   .btn-booking {
+    display: inline-block;
+    text-decoration: none;
     background: transparent;
     color: #004b23;
     border: 1.5px solid #004b23;
     padding: 0.6rem 2rem;
-    border-radius: 0; // Quadrado é mais "editorial/high-fashion"
+    border-radius: 0; 
     font-weight: 700;
     text-transform: uppercase;
     font-size: 0.7rem;
