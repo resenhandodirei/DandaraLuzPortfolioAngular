@@ -23,6 +23,10 @@ h1 {
   -webkit-text-stroke: 2px $verde-arara; // Contorno no texto
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   font-size: 1.5rem;
   font-weight: bold;
