@@ -4,11 +4,23 @@
       <h1 class="logo-text">DANDARA <span class="thin">LUZ</span></h1>
     </a>
 
-    <nav class="navigation">
+    <button 
+      class="hamburguer"
+      [class.open]="menuOpen()"
+      (click)="toggleMenu()"
+      aria-label="Abrir menu de navegação"
+      [attr.aria-expanded]="menuOpen()"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navigation" [class.open]="menuOpen()">
       <ul class="nav-list">
-        <li><a href="#photo" class="nav-link">Photography</a></li>
-        <li><a href="#design" class="nav-link">Digital Art</a></li>
-        <li><a href="#social" class="nav-link">Strategy</a></li>
+        <li><a href="#photo" class="nav-link" (click)="closeMenu()">Photography</a></li>
+        <li><a href="#design" class="nav-link" (click)="closeMenu()">Digital Art</a></li>
+        <li><a href="#social" class="nav-link" (click)="closeMenu()">Strategy</a></li>
       </ul>
     </nav>
 
