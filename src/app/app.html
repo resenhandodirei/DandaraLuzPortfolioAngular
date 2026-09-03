@@ -1,6 +1,9 @@
 
 
 <app-header></app-header>
+<button class="theme-toggle" (click)="toggleTheme()">
+  {{ darkMode() ? '☀️' : '🌙' }}
+</button>
 <app-hero></app-hero>
 <app-projects></app-projects>
 <app-services></app-services>

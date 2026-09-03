@@ -14,14 +14,23 @@
   --color-off-white: #f8f9fa;  // fundo galeria
   --color-cream: #f4f1ea;      // fundo creme sólido
   --color-charcoal: #1a1a1a;   // texto neutro escuro
+
+  --color-bg: var(--color-off-white);
+  --color-text: var(--color-charcoal);
 }
 
+[data-theme="dark"] {
+  --color-bg: var(--color-moss-dark);
+  --color-text: var(--color-cream);
+}
 
 body {
   margin: 0;
-  color: --color-verde-arara;
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
+
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
 html {

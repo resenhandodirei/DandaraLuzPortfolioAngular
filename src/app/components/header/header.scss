@@ -5,8 +5,8 @@
   left: 0;
   z-index: 1000;
   border-top: 6px solid;
-  border-image: linear-gradient(90deg, --color-amarelo-canario, --color-laranja-manga, --color-rosa-choque) 1;
-  background: rgba(255, 255, 255, 0.8);
+  border-image: linear-gradient(90deg, var(--color-amarelo-canario), var(--color-laranja-manga), var(--color-rosa-choque)) 1;
+  background: color-mix(in srgb, var(--color-bg) 80%, transparent);
   backdrop-filter: saturate(180%) blur(20px); // Efeito Apple/Glassmorphism
   padding: 0.75rem 0;
 
