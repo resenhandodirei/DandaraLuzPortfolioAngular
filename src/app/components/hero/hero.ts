@@ -1,10 +1,9 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router'; // Importação necessária
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [RouterOutlet], // Tem que avisar o Angular aqui
+  imports: [], 
   templateUrl: './hero.html',
   styleUrl: './hero.scss'
 })

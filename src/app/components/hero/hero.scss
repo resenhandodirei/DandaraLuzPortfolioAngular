@@ -1,3 +1,5 @@
+@use '../../../styles' as *;
+
 .hero-wrap {
   display: flex;
   min-height: 90vh;
@@ -88,11 +90,38 @@
       height: 80%;
       object-fit: cover;
       border: 6px solid;
-      border-image-source: linear-gradient(180deg, #FF1493, #FF4500);
+      border-image: linear-gradient(90deg, var(--color-amarelo-canario), var(--color-laranja-manga), var(--color-rosa-choque)) 1;
       border-image-slice: 1;
   
       box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1);
       filter: grayscale(20%) contrast(1.1); // Look fotográfico profissional
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-wrap {
+    flex-direction: column;
+    min-height: auto;
+    padding-top: 100px; // espaço pro header fixo + hambúrguer
+
+    .hero-container {
+      padding-left: 6%;
+      padding-right: 6%;
+      text-align: center;
+      order: 1;
+    }
+
+    .image-showcase {
+      order: 2;
+      width: 80%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }

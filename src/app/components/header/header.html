@@ -4,14 +4,33 @@
       <h1 class="logo-text">DANDARA <span class="thin">LUZ</span></h1>
     </a>
 
-    <nav class="navigation">
+    <button 
+      class="hamburguer"
+      [class.open]="menuOpen()"
+      (click)="toggleMenu()"
+      aria-label="Abrir menu de navegação"
+      [attr.aria-expanded]="menuOpen()"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navigation" [class.open]="menuOpen()">
       <ul class="nav-list">
-        <li><a href="#photo" class="nav-link">Photography</a></li>
-        <li><a href="#design" class="nav-link">Digital Art</a></li>
-        <li><a href="#social" class="nav-link">Strategy</a></li>
+        <li><a href="#photo" class="nav-link" (click)="closeMenu()">Photography</a></li>
+        <li><a href="#design" class="nav-link" (click)="closeMenu()">Digital Art</a></li>
+        <li><a href="#social" class="nav-link" (click)="closeMenu()">Strategy</a></li>
       </ul>
     </nav>
 
-    <button class="btn-booking">Book a Session</button>
+    <a
+        href="https://wa.me/5592XXXXXXXXX?text=Ol%C3%A1%2C%20Dandara!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20agendar%20uma%20sess%C3%A3o."
+        target="_blank"
+      rel="noopener noreferrer"
+      class="btn-booking"
+    >
+  Book a Session
+    </a>
   </div>
 </header>
